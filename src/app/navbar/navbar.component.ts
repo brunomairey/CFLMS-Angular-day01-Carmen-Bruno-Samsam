@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
+})
+export class NavbarComponent implements OnInit {
+	projectName:string;
+	HomePage:string;
+	AboutPage:string;
+  constructor() {
+this.projectName = "Travel Agency"
+this.HomePage = "Home"
+this.AboutPage = "About us"
+   }
+
+  ngOnInit() {
+  }
+
+}
